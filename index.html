@@ -1,0 +1,136 @@
+ <!-- THEME AND PREFFERENCES FOR MODAL  -->
+    <div class="modal fade  bg-secondary" id="md_userSetting_theme" tabindex="-1" role="dialog"
+    aria-labelledby="md_md_userSetting_themeTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-top modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+
+                <span type="text" class="form-control text-center" id="Reg_congregation_name"
+                    style="color: blue; font-size: 1.5em; width: 50%;"> <img class=" rounded mr-2" width="35"
+                        height="40" src="/DeHiMS/DeHims_Images/DeHiMS Favicon.png" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" role="img" alt="DeHiMS Logo">DeHiMS </span>
+                <br>
+                <hr>
+                <h5 class="modal-title text-danger" id="exampleModalLongTitle">THEME AND PREFFERENCES</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> 
+            <div class="modal-body">
+            <select name="owner" id="orgUnitOwner">
+                <option value="Government">Government</option>
+                <option value="Private">Private</option>
+                <option value="Quasi">Quasi</option>
+                <option value="Mine">Health Post</option>
+            </select>
+
+            <link rel="stylesheet" href="">
+                <!-- modal contenst -->
+                <div class="container-fluid">
+                    <span id="themeAppearance_feedMsg"></span>
+                    <form id="fm_themeAppearance_form" action="register/regiister.php" method="post">
+                        <button hidden type="reset">Reset Form</button>
+                    <div class="row">
+                            <input hidden readonly type="text" name="member_id" id="themeAppearance_fnumber">
+
+                        <h4>APPEARANCE</h4>
+                            <div class="form-group">
+                                <label for="setting_bg" class="col-form-label text-secondary">BACKGROUND COLOR</label>
+                                <select required type="text" class="form-control" name="bg_color" id="setting_bg" style="color: blue; font-size: 30px">
+                                
+                                    <option value="white">Default</option>
+                                
+                                    <option value="red">Red</option>
+                                
+                                    <option value="yellow">Yellow</option>
+
+                                    <option value="green">Green</option>
+
+                                    <option value="blue">Blue</option>
+
+                                    <option value="black">BLACK</option>
+                                </select>
+
+                                <span class="btn"></span>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                   
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="setting_fontSize" class="col-form-label text-secondary">TEXT SIZE</label>
+                            <input required type="number" step="1" min="10" max="40" value="20" name="txt_size" id="setting_fontSize" class="form-control scroll"
+                                style="font-size: 30px; color: blue" placeholder="Text Size">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="setting_input_bg" class="col-form-label text-secondary">INPUT FIELDS BACKGROUND</label>
+                                <select required type="text" class="form-control" name="bg_color" id="setting_input_bg" style="color: blue; font-size: 30px">
+                                
+                                    <option value="blue">Default</option>
+                                
+                                    <option value="red">Red</option>
+                                
+                                    <option value="yellow">Yellow</option>
+                                
+                                    <option value="green">Green</option>
+                                
+                                    <option value="black">Blue</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txt_inputSize" class="col-form-label text-secondary">INPUT FIELDS SIZE</label>
+                                <input required type="number" step="1" min="10" max="40" value="20" name="txt_inputSize" id="setting_fontSize"
+                                    class="form-control scroll" style="font-size: 30px; color: blue" placeholder="Input Field Size">
+                            </div>
+
+                        <a href="http://"></a>
+
+                    </div>
+                    styl
+
+                </div>
+
+                <!-- end of modal contenst -->
+
+            </div>
+
+            <div class="modal-footer">
+
+
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <button id="btn_saveSettings" class="btn btn-info btn-block btn-lg" type="submit">SAVE CHANGES</button>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col">
+
+                            <button id="btn_cancelSettings" type="button" class="btn btn-danger btn-block btn-lg"
+                                data-dismiss="modal">CANCIL</button>
+
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+    <input autocomplete="off" readonly hidden type="text" name="diagnosNameAlt" id="diagnosNameAlt">
+
+ <!-- END OF THEME AND PREFFERENCES FOR MODAL  -->
+
+ <script type="text/javascript">
+  var NewUrl = "$reSetUrl";
+ </script>
